@@ -159,14 +159,10 @@
             }else{
                 temp2[i]=(new Date(temp2[i]*1000).getHours());
             }
-
         }
-
         for(let i=0; i<temp2.length; i++){
             sentimentCount.push([temp2[i]*1000, temp1[i]])
         }
-        console.log(sentimentCount)
-
         var myChart = new Chart(ctx, {
             type: 'line',
             data: {
